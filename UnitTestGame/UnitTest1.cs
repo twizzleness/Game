@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Game;
+using System.Collections.Generic;
 
 namespace UnitTestGame
 {
@@ -9,7 +11,11 @@ namespace UnitTestGame
         [TestMethod]
         public void TestPlayer()
         {
-            var player = new Player();
+            var unit = new Barbarian(25, 10);
+            var army = new List<IUnit>() { unit };
+            var player = new Player("Name", new Army(army));
+
+            Assert.AreEqual(unit.GetType(), player.Army.Units.GetType());
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Game
 {
 
-    interface IUnit
+    public interface IUnit
     {
         int HitPoints { get; set; }
         int AttackStrength { get; set; }
@@ -19,7 +19,7 @@ namespace Game
         void Die();
     }
 
-    class Barbarian : IUnit
+    public class Barbarian : IUnit
     {
         public int HitPoints { get; set; }
         public int AttackStrength { get; set; }

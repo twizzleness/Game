@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Player
+    public class Player
     {
-        String Name { get; set; }
-        PlayerArmy Army { get; set; }
+        public String Name { get; set; }
+        public Army Army { get; set; }
 
-        public Player(String name, PlayerArmy army)
+        public Player(String name, Army army)
         {
             Name = name;
             Army = army;

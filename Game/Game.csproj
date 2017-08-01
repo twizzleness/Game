@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Player.cs" />
-    <Compile Include="PlayerArmy.cs" />
+    <Compile Include="Army.cs" />
     <Compile Include="Units\Archer.cs" />
     <Compile Include="Units\Barbarian.cs" />
     <Compile Include="Program.cs" />

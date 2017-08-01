@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game.Units
 {
-    class Wizard : IUnit
+    public class Wizard : IUnit
     {
         public int AttackSpeed { get; set; }
 
