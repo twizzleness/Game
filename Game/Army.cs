@@ -8,7 +8,7 @@ namespace Game
 {
     public class Army
     {
-        public List<IUnit> Units { get; set; }
+        private List<IUnit> Units { get; set; }
 
         public Army()
         {
@@ -29,6 +29,11 @@ namespace Game
         {
             var unitToRemove = Units.First(a => a.GetType() == unit.GetType());
             Units.Remove(unitToRemove);
+        }
+
+        public IUnit GetFirstUnit()
+        {
+            return Units.First();
         }
     }
 }

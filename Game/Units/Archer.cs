@@ -9,12 +9,10 @@ namespace Game
     public class Archer : IUnit
     {
         public int AttackSpeed { get; set; }
-
         public int AttackStrength { get; set; }
-
         public int HitPoints { get; set; }
-
         public int MovementSpeed { get; set; }
+        public int Level { get; set; }
 
         public Archer(int hitPoints, int attackStrength)
         {
@@ -22,6 +20,7 @@ namespace Game
             AttackStrength = attackStrength;
             AttackSpeed = 3;
             MovementSpeed = 2;
+            Level = 1;
         }
 
         public void DealDamage(IUnit enemy)
