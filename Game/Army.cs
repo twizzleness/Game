@@ -8,7 +8,7 @@ namespace Game
 {
     public class Army
     {
-        private List<IUnit> Units { get; set; }
+        public List<IUnit> Units { get; set; }
 
         public Army()
         {
