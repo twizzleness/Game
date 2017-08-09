@@ -9,11 +9,19 @@ namespace Game.Units
     public class Wizard : IUnit
     {
         public int AttackSpeed { get; set; }
-
         public int AttackStrength { get; set; }
         public int HitPoints { get; set; }
-
         public int MovementSpeed { get; set; }
+        public int Level { get; set; }
+
+        public Wizard(int hitPoints, int attackStrength)
+        {
+            HitPoints = hitPoints;
+            AttackStrength = attackStrength;
+            AttackSpeed = 5;
+            MovementSpeed = 5;
+            Level = 1;
+        }
 
         public void DealDamage(IUnit enemy)
         {

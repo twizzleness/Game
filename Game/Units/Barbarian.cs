@@ -13,6 +13,7 @@ namespace Game
         int AttackStrength { get; set; }
         int AttackSpeed { get; set; }
         int MovementSpeed { get; set; }
+        int Level { get; set; }
 
         void TakeDamage(int amount);
         void DealDamage(IUnit enemy);
@@ -25,6 +26,7 @@ namespace Game
         public int AttackStrength { get; set; }
         public int AttackSpeed { get; set; }
         public int MovementSpeed { get; set; }
+        public int Level { get; set; }
 
         public Barbarian(int hitPoints, int attackStrength)
         {
@@ -32,6 +34,7 @@ namespace Game
             AttackStrength = attackStrength;
             AttackSpeed = 5;
             MovementSpeed = 5;
+            Level = 1;
         }
 
         public void TakeDamage(int amount)
