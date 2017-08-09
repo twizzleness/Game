@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game.Units
+namespace Game
 {
     public class Wizard : IUnit
     {
