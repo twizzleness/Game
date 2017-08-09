@@ -14,7 +14,7 @@ namespace UnitTestGame
         public void TestPlayer()
         {
             var army = new List<IUnit>() { new Barbarian(25, 10), new Archer(25, 10), new Wizard(25, 10) };
-            var player = new Player("Name", new Army(army));
+            var player = new Player("Tyler", new Army(army));
 
             Assert.AreEqual(army.ElementAt(0).GetType(), player.Army.Units.ElementAt(0).GetType());
             System.Console.WriteLine($"Expected: {army.ElementAt(0).GetType()} Actual: {player.Army.Units.ElementAt(0).GetType()}");
