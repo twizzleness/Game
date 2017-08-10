@@ -10,6 +10,8 @@ namespace Game
     {
         public String Name { get; set; }
         public Army Army { get; set; }
+        public int Level { get; set; }
+        public int MaxArmySize { get; set; }
 
         public Player(String name, Army army)
         {

@@ -23,5 +23,11 @@ namespace UnitTestGame
             Assert.AreEqual(army.ElementAt(2).GetType(), player.Army.Units.ElementAt(2).GetType());
             System.Console.WriteLine($"Expected: {army.ElementAt(2).GetType()} Actual: {player.Army.Units.ElementAt(2).GetType()}");
         }
+        
+        [TestMethod]
+        public void TestMaxArmySize()
+        {
+
+        }
     }
 }

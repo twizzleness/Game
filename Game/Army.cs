@@ -20,9 +20,10 @@ namespace Game
             Units = units;
         }
 
-        public void AddUnit(IUnit unit)
+        public void AddUnit(IUnit unit, Player player)
         {
-            Units.Add(unit);
+            if(Units.Count() > player.MaxArmySize)
+                Units.Add(unit);
         }
 
         public void RemoveUnit(IUnit unit)
